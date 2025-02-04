@@ -1,0 +1,12 @@
+Name: “HELLOW WORLD”
+run-name: "Compilación en Servidor Linux "
+on:
+push:
+branches:
+- master
+jobs:
+build:
+runs-on: self-hosted # Se ejecuta en el runner self-hosted
+steps:
+- name: Checkout del código
+uses: actions/checkout@v4
